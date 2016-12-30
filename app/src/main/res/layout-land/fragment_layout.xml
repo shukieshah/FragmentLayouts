@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shuka.fragmentlayouts.FragmentLayout">
+
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/titles"
+        class = "com.example.shuka.fragmentlayouts.TitlesFragment"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/detailsElementBackground"
+        android:layout_weight="3"
+        android:id="@+id/details"/>
+
+</LinearLayout>
